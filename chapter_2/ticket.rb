@@ -28,6 +28,10 @@ def ticket.available?
   false
 end
 
+def ticket.print_details(*x)
+  x.each { |detail| puts "This ticket is #{detail}." }
+end
+
 print "Information desired: "
 request = gets.chomp
 
@@ -43,3 +47,5 @@ puts "This ticket is for: #{ticket.event}, at #{ticket.venue}.\n" +
 "The performer is #{ticket.performer}.\n" +
 "The seat is #{ticket.seat}, " +
 "and it costs $#{"%.2f." % ticket.price}"
+
+ticket.print_details("non-refundable", "non-transferable", "non-smoking section")
