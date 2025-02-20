@@ -1,4 +1,4 @@
-require_relative " MyFirstModule"
+require_relative "MyFirstModule"
 class ModuleTester
   include MyFirstModule
 end

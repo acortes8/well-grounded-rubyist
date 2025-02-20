@@ -1,4 +1,4 @@
-module Stacklike
+module StackLike
   def stack
     @stack ||= []
   end

@@ -1,6 +1,6 @@
 require_relative "stacklike"
 class Stack
-  include Stacklike
+  include StackLike
 end
 
 s = Stack.new
