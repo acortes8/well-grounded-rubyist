@@ -33,3 +33,13 @@ class Person
     end
   end
 end
+
+e = Person.new("Eric B.")
+r = Person.new("Rakim")
+e.has_friend(r)
+e.has_hobby("cycling")
+r.has_hobby("drums")
+
+Person.all_with_hobbies("cycling").each do |person|
+  puts "#{person.name} is into cycling."
+end
